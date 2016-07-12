@@ -29,6 +29,7 @@ int main() {
 	}
 	printf("This is the descending order: \n");
 	for(n=i-1;n>=0;n--){
-	printf("%d \n", arr[n]);
+		printf("%d \n", arr[n]);
 	}//print ascending order backwards, for descending
+	free(arr);
 }
