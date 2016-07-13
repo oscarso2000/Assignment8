@@ -1,0 +1,9 @@
+1. It can crash, because in line 18, the condition is a pointer instead. In line 29, there is a possible infinite while loop. 
+2. Valgrind is a program which checks memory leaks and the possible number of bytes that the user is wasting. If a pointer is not freed where allocated in the heap, the pointer will be definitely lost. Only one char pointer isnt freed, so 4 bytes is lost.
+3. Line 27.
+4. 
+Line 26: p=(char*)malloc(strlen(a),strlen(b),+1) = {"  ","  ", "  "};
+Last line: free(p);
+}
+
+--Oscar So--
